@@ -16,7 +16,7 @@ spec:
         spec:
             containers:
                 - name: app
-                  image: matesousa/app-helm:{{ .Values.env.APP_VERSION }}
+                  image: gouthz/app-helm:{{ .Values.env.APP_VERSION }}
                   ports:
                     - containerPort: 3000
                   env:
@@ -39,4 +39,3 @@ spec:
                     timeoutSeconds: 5
                     successThreshold: 1
                     failureThreshold: 3
-                    
